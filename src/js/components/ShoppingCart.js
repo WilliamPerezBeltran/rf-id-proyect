@@ -1,5 +1,3 @@
-
-// -------------------------1 se puede hacer con clase-------------------------------------------
 import React, { Component } from 'react';
 import {removeFromCart} from '../ActionCreator'
 import {connect} from 'react-redux'
