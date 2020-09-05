@@ -6,11 +6,21 @@ import store  from './js/Store'
 import { Provider } from 'react-redux'
 import {loadProducts}  from './js/ActionCreator'
 
+import {
+  BrowserRouter ,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 store.dispatch(loadProducts())
 
 ReactDOM.render(
-	<Provider store={store}>
-  		<App />
-	</Provider>,
+	<BrowserRouter>
+		
+		<Provider store={store}>
+	  		<App />
+		</Provider>
+	</BrowserRouter>,
   document.getElementById('root')
 );
